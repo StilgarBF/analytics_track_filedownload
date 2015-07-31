@@ -30,7 +30,6 @@ $(function()
 		var filename = linkHref.substring( linkHref.lastIndexOf('/') + 1 );
 		var filetype = filename.substring( filename.lastIndexOf('.') + 1 );
 
-		ga.send('send', 'event', 'download', filetype, filename);
-
+		ga('send', 'event', 'download', filetype, filename);
 	});
 });
